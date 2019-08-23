@@ -1,0 +1,12 @@
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\bin\Debug\netcoreapp2.0\CodersDirectory.deps.json
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\bin\Debug\netcoreapp2.0\CodersDirectory.runtimeconfig.json
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\bin\Debug\netcoreapp2.0\CodersDirectory.runtimeconfig.dev.json
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\bin\Debug\netcoreapp2.0\CodersDirectory.dll
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\bin\Debug\netcoreapp2.0\CodersDirectory.pdb
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\obj\Debug\netcoreapp2.0\CodersDirectory.csproj.CoreCompileInputs.cache
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\obj\Debug\netcoreapp2.0\CodersDirectory.AssemblyInfoInputs.cache
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\obj\Debug\netcoreapp2.0\CodersDirectory.AssemblyInfo.cs
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\obj\Debug\netcoreapp2.0\CodersDirectory.dll
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\obj\Debug\netcoreapp2.0\CodersDirectory.pdb
+C:\Users\Me\projects\CodersDirectory\CodersDirectory\obj\Debug\netcoreapp2.0\CodersDirectory.csprojAssemblyReference.cache

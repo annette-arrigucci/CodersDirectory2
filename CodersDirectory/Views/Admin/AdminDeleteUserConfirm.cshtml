@@ -1,0 +1,15 @@
+﻿@model AdminDeleteUserViewModel
+@{
+    ViewData["Title"] = "Confirm Delete User";
+}
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <h2>Confirm Delete</h2>
+        <p>Are you sure you want to delete the user @Model.UserName ?</p>
+        <form method="post" asp-controller="Admin" asp-action="AdminDeleteUserConfirmPost">
+            <input type="hidden" name="userId" value="@Model.UserId" />
+            <input type="submit" value="Yes" class="btn btn-danger" style="width: 100px;" />
+            <input type="button" class="btn btn-default" value="Cancel" style="width:100px;" onclick="location.href='@Url.Action("Index", "Admin")'" />
+        </form>
+    </div>
+</div>

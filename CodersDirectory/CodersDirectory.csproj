@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-CodersDirectory-A85A3130-EDC7-4B53-BCF7-133B70FFB716</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Helpers\LanguageProfileHelper.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.0" />
+    <PackageReference Include="SendGrid" Version="9.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ImageUploads\" />
+    <Folder Include="wwwroot\ImageUploads\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+﻿@model List<ProfileSummaryViewModel>
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<h2 class="text-center">Search Results</h2>
+@Html.ActionLink("Search Again", "Search", "Profiles")
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">
+                Name
+            </th>
+            <th style="width: 25%;">
+                Languages/Frameworks
+            </th>
+            <th style="width: 13.7%;">
+                City
+            </th>
+            <th style="width: 13.7%;">
+                State
+            </th>
+            <th style="width: 13.7%;">
+                Country
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Languages)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

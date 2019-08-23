@@ -1,0 +1,39 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData.AddActivePage(ManageNavPages.Index);
+}
+
+<h4>@ViewData["Title"]</h4>
+@Html.Partial("_StatusMessage", Model.StatusMessage)
+<div class="row">
+    <div class="col-md-6">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label>Username</label>
+                <br />
+                <!--<input asp-for="Username" class="form-control" disabled />-->
+                @Html.Raw(Model.Username)
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <br />
+                @if (Model.IsEmailConfirmed)
+                {
+                    <div class="input-group">
+                        @Html.Raw(Model.Email)
+                        <span class="input-group-addon" aria-hidden="true"><span class="glyphicon glyphicon-ok text-success"></span></span>
+                    </div>
+                }
+                else
+                {
+                    @Html.Raw(Model.Email)
+                    <br />
+                    <form method="post" asp-controller="Manage" asp-action="SendVerificationEmail">
+                        <input type="hidden" name="verEmail" value="@Model.Email" />
+                        <input type="submit" class="btn btn-default" style="margin-top: 10px;" name="SendVerification" value="Send verification email" />
+                    </form>
+                }
+                </div>
+    </div>
+</div>

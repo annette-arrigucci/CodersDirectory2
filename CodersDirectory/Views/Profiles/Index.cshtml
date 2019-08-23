@@ -1,0 +1,152 @@
+﻿@model ProfileIndexViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2 class="text-center">Welcome to Coders Directory</h2>
+<h3 class="text-center">Announcements</h3>
+<p class="text-center">@Model.Announcement</p>
+
+
+@if (User.IsInRole("NewUser"))
+{
+    <h3 class="text-center">New Users</h3>
+    <p>Before you can view other member profiles, you must</p>
+    <ul>
+        <li>
+        @if (Model.EmailVerified == true)
+        {
+           @Html.Raw("Verify your email - ")<span style="color: green;">Completed</span>
+        }
+        else
+        {
+           @Html.Raw("Verify your email - Go to the ")
+           @Html.ActionLink("Manage Account", "Index", "Manage")
+           @Html.Raw(" page to send a confirmation email.")
+        }
+        </li>
+        <li>
+         @if (Model.ProfileCreated == true)
+         {
+             @Html.Raw("Create your profile - ")<span style="color: green;">Completed</span>
+         }
+         else
+         {
+             @Html.ActionLink("Create and save your profile", "Create", "Profiles")
+         }
+        </li>
+    </ul>
+    <p>Once you have completed those two steps, an administrator will review your account. If approved, your profile will be published on the site and you will be able to search other user profiles.</p>
+    <p>If your account is not approved within five business days, please @Html.ActionLink("contact us", "About", "Home").</p>
+}
+else if(User.IsInRole("Admins") || User.IsInRole("ApprovedUser"))
+{
+<h3 class="text-center">New Members/Recently Updated</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">
+                Name
+            </th>
+            <th style="width: 25%;">
+                Languages/Frameworks
+            </th>
+            <th style="width: 13.7%;">
+                City
+            </th>
+            <th style="width: 13.7%;">
+                State
+            </th>
+            <th style="width: 13.7%;">
+               Country
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.RecentProfiles == null || Model.RecentProfiles.Count() == 0)
+        {
+            <tr><td>No recent profiles to display.</td></tr>
+        }
+        else
+        {
+        @foreach (var item in Model.RecentProfiles)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Languages)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+            </tr>
+        }
+        }
+        </tbody>
+ </table>
+<h3 class="text-center">Favorite Profiles</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">
+                Name
+            </th>
+            <th style="width: 25%;">
+                Languages/Frameworks
+            </th>
+            <th style="width: 13.7%;">
+                City
+            </th>
+            <th style="width: 13.7%;">
+                State
+            </th>
+            <th style="width: 13.7%;">
+                Country
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @if (Model.FavoriteProfiles == null || Model.FavoriteProfiles.Count() == 0)
+    {
+        <tr><td>No favorite profiles to display.</td></tr>
+    }
+    else
+    {
+        @foreach (var item in Model.FavoriteProfiles)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Languages)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+}
+else
+{
+    <h3 class="text-center">Account Error</h3>
+    <p class="text-center">Please @Html.ActionLink("contact an adminstrator", "About", "Home") about your account.</p>
+}
