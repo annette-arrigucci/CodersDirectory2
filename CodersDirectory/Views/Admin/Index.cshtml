@@ -4,8 +4,8 @@
     ViewData["Title"] = "Admin Dashboard";
 }
 
-<h2 class="text-center">Milspouse Coders Directory Admin Dashboard</h2>
-<h3 class="text-center">Announcements</h3>
+<h2 class="text-center" style="font-weight: 700;">Coders Directory Admin Dashboard</h2>
+<h3 class="text-center" style="font-weight: 700;">Announcements</h3>
 <form method="post" asp-controller="Admin" asp-action="UpdateAnnouncement" name="AnnouncementForm" onkeypress="return event.keyCode != 13;">
     <div class="form-group">
         <label asp-for="Announcement" class="control-label"></label>
@@ -14,8 +14,8 @@
     <input type="submit" class="btn btn-default" name="Update" value="Update Announcement" />
 </form>
 
-<h3 class="text-center">Manage Users</h3>
-<table class="table">
+<h3 class="text-center" style="font-weight: 700;">Manage Users</h3>
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -104,8 +104,8 @@
         }
     </tbody>
 </table>
-<h3 class="text-center">Manage Profiles</h3>
-<table class="table">
+<h3 class="text-center" style="font-weight: 700;">Manage Profiles</h3>
+<table class="table table-striped">
     <thead>
         <tr>
             <th>

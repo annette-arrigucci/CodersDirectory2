@@ -7,35 +7,35 @@
 @if (SignInManager.IsSignedIn(User))
 {
 <ul class="nav navbar-nav">
-    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+    <li><a asp-area="" asp-controller="Home" asp-action="Index" class="custom-nav-link">Home</a></li>
     @if (User.IsInRole("ApprovedUser") || User.IsInRole("Admins"))
     {
-        <li><a asp-area="" asp-controller="Profiles" asp-action="Search">Search</a></li>
+        <li><a asp-area="" asp-controller="Profiles" asp-action="Search" class="custom-nav-link">Search</a></li>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle custom-nav-link" data-toggle="dropdown">
                Profile
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu navbar-inverse navbar-nav">
-                <li><a asp-area="" asp-controller="Profiles" asp-action="MyProfile">View Profile</a></li>
-                <li><a asp-area="" asp-controller="Profiles" asp-action="EditMyProfile">Edit Profile</a></li>
+                <li><a asp-area="" asp-controller="Profiles" asp-action="MyProfile" class="custom-nav-link">View Profile</a></li>
+                <li><a asp-area="" asp-controller="Profiles" asp-action="EditMyProfile" class="custom-nav-link">Edit Profile</a></li>
             </ul>
         </li>
     }
-    <li><a asp-area="" asp-controller="Manage" asp-action="Index">Manage Account</a></li>
+    <li><a asp-area="" asp-controller="Manage" asp-action="Index" class="custom-nav-link">Manage Account</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
     @if (User.IsInRole("Admins"))
     {
-        <li><a asp-area="" asp-controller="Admin" asp-action="Index">Admin Dashboard</a></li>
+        <li><a asp-area="" asp-controller="Admin" asp-action="Index" class="custom-nav-link">Admin Dashboard</a></li>
     }
 </ul>
     <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">Logged in as @UserManager.GetUserName(User)</a>
+                <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage" class="custom-nav-link">Logged in as @UserManager.GetUserName(User)</a>
             </li>
             <li>
-                <button type="submit" class="btn btn-link navbar-btn navbar-link">Log out</button>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link custom-nav-link">Log out</button>
             </li>
         </ul>
     </form>
@@ -43,9 +43,9 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li><form asp-area="" asp-controller="Account" asp-action="DemoAdminLogin" method="post"><button type="submit" class="btn btn-link navbar-btn navbar-link">Admin Demo</button></form></li>
-        <li><form asp-area="" asp-controller="Account" asp-action="DemoUserLogin" method="post"><button type="submit" class="btn btn-link navbar-btn navbar-link">User Demo</button></form></li>
-        <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
-        <li><a asp-area="" asp-controller="Account" asp-action="Login">Log in</a></li>
+        <li class="custom-nav-link"><form asp-area="" asp-controller="Account" asp-action="DemoAdminLogin" method="post"><button type="submit" class="btn btn-link navbar-btn navbar-link">Admin Demo</button></form></li>
+        <li class="custom-nav-link"><form asp-area="" asp-controller="Account" asp-action="DemoUserLogin" method="post"><button type="submit" class="btn btn-link navbar-btn navbar-link">User Demo</button></form></li>
+        <li class="custom-nav-link"><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
+        <li class="custom-nav-link"><a asp-area="" asp-controller="Account" asp-action="Login">Log in</a></li>
     </ul>
 }
