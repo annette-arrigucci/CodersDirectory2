@@ -131,7 +131,7 @@ Write(Html.ActionLink("Search Again", "Search", "Profiles"));
             WriteLiteral("            <tr>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(829, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2c0420a8d784933908269cf5eb1131b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db8a949a123a4542a7a58971efaea8ed", async() => {
                 BeginContext(878, 9, false);
 #line 34 "C:\Users\Me\projects\CodersDirectory\CodersDirectory\Views\Profiles\SearchResults.cshtml"
                                                                Write(item.Name);

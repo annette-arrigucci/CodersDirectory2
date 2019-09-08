@@ -106,12 +106,12 @@ using System.Globalization;
             WriteLiteral("\r\n<h2 class=\"text-center\" style=\"font-weight: 700;\">Coders Directory Admin Dashboard</h2>\r\n<h3 class=\"text-center\" style=\"font-weight: 700;\">Announcements</h3>\r\n");
             EndContext();
             BeginContext(242, 419, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95a8f1089fd04583a953fcd26e9bcd88", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3e52eefa793949389a723e23e9418d2d", async() => {
                 BeginContext(382, 40, true);
                 WriteLiteral("\r\n    <div class=\"form-group\">\r\n        ");
                 EndContext();
                 BeginContext(422, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75e770683b244b22a6034f1ad01514c7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fecca5d45361419c871903bb8010f719", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
@@ -135,7 +135,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(492, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5e212c165aeb44ca8207f68b1b0369cf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4b17158f86d74e8b8ef3ea9df01d5eb3", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -247,7 +247,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
             WriteLiteral("                            ");
             EndContext();
             BeginContext(1643, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b07afcbda59042349fce4dd8e0f9320d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f360d6ddd834f14890b1a5673fbe460", async() => {
                 BeginContext(1725, 9, false);
 #line 55 "C:\Users\Me\projects\CodersDirectory\CodersDirectory\Views\Admin\Index.cshtml"
                                                                                                         Write(item.Name);
@@ -465,7 +465,7 @@ WriteAttributeValue("", 3200, item.UserId, 3200, 12, false);
             WriteLiteral("                    </td>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(3443, 321, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8a468cf75784e65886a0e20003b3c0a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18d68dd3d0514662961befb3f9ac144d", async() => {
                 BeginContext(3515, 64, true);
                 WriteLiteral("\r\n                            <input type=\"hidden\" name=\"UserId\"");
                 EndContext();
@@ -582,7 +582,7 @@ WriteAttributeValue("", 3587, item.UserId, 3587, 12, false);
             WriteLiteral("                <tr>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(4989, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0d587f9846642649435ba6bad115c61", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eaf41fd49fd54a4688108f51e76f45a4", async() => {
                 BeginContext(5071, 9, false);
 #line 154 "C:\Users\Me\projects\CodersDirectory\CodersDirectory\Views\Admin\Index.cshtml"
                                                                                                     Write(item.Name);
@@ -784,7 +784,7 @@ WriteAttributeValue("", 6860, item.ProfileId, 6860, 15, false);
             WriteLiteral("                    </td>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(7110, 427, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4681d2b1da0d4044b2da624df1e79092", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e867944bc0d46068117a07f0fb087c9", async() => {
                 BeginContext(7192, 67, true);
                 WriteLiteral("\r\n                            <input type=\"hidden\" name=\"ProfileId\"");
                 EndContext();

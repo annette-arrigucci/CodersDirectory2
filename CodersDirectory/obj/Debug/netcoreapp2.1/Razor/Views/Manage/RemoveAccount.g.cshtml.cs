@@ -99,7 +99,7 @@ using CodersDirectory.Views.Manage;
             WriteLiteral("\r\n<h4>Delete Account</h4>\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n            <div class=\"form-group\">\r\n                <label> Are you sure you want to delete your account?</label>\r\n            ");
             EndContext();
             BeginContext(312, 354, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d281d51ad044ecc9fbfbd42abd473bd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "322ba7a1228043bc9cf3617ca7468a28", async() => {
                 BeginContext(387, 196, true);
                 WriteLiteral("\r\n                <input type=\"submit\" value=\"Yes\" class=\"btn btn-danger\" style=\"width: 100px;\" />\r\n                <input type=\"button\" class=\"btn btn-default\" value=\"Cancel\" style=\"width:100px;\"");
                 EndContext();

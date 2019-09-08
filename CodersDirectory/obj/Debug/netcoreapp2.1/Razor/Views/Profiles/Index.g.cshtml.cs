@@ -280,7 +280,7 @@ else if (User.IsInRole("Admins") || User.IsInRole("ApprovedUser"))
             WriteLiteral("                    <tr>\r\n                        <td>\r\n                            ");
             EndContext();
             BeginContext(2850, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5264a171d1aa40599f36d94a9b0625b8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b966cb443254eeeb80f34d45b29b4ca", async() => {
                 BeginContext(2899, 9, false);
 #line 78 "C:\Users\Me\projects\CodersDirectory\CodersDirectory\Views\Profiles\Index.cshtml"
                                                                        Write(item.Name);
@@ -425,7 +425,7 @@ else if (User.IsInRole("Admins") || User.IsInRole("ApprovedUser"))
             WriteLiteral("                    <tr>\r\n                        <td>\r\n                            ");
             EndContext();
             BeginContext(4733, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "353bb26f99da4eb0a1e840ec8bf5cc67", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f3b3b18e3bd41e88e2b6775b99bed83", async() => {
                 BeginContext(4782, 9, false);
 #line 130 "C:\Users\Me\projects\CodersDirectory\CodersDirectory\Views\Profiles\Index.cshtml"
                                                                        Write(item.Name);
